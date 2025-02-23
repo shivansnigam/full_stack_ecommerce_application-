@@ -1,0 +1,214 @@
+.banner-img {
+    margin-top: -10px;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+    max-height: 550px;
+    
+  }
+  .home-page h1 {
+    color: gray;
+    font-family: "Playfair Display", serif;
+  }
+  
+  .home-page {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .home-page .card {
+    background-color: rgba(128, 128, 128, 0.097);
+    width: 18rem;
+  }
+  .home-page .card-name-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .home-page .card-price {
+    color: green;
+    font-weight: bold;
+  }
+  .home-page button {
+    border-radius: 0;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .home-page .card-text {
+    color: rgb(90, 89, 89);
+  }
+  
+  .home-page .card img:hover {
+    transform: scale(0.9);
+  }
+  
+  .home-page .card-img-top {
+    height: 300px !important;
+  }
+  /* ==================
+  filters
+  ============== */
+  .filters h4 {
+    margin-top: 100px;
+    color: gray !important;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.337);
+  }
+  
+  .ant-checkbox-wrapper:first-of-type {
+    margin-left: 8px;
+  }
+  
+  .ant-checkbox-wrapper {
+    margin: 2px;
+  }
+  .ant-radio-wrapper {
+    margin-bottom: 5px !important;
+    margin-left: 10px;
+  }
+  
+  .filters button {
+    background-color: black;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    margin-top: 20px;
+  }
+  
+  .loadmore {
+    color: green;
+    font-weight: bold;
+    font-size: 20px !important;
+  }
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto; 
+}
+
+
+.container {
+  overflow-x: hidden;
+  overflow-y: auto; 
+}
+
+/* Custom styles for slider arrows */
+/* .custom-arrow {
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  border-radius: 50%;
+  opacity: 0.75;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-arrow:hover {
+  opacity: 1;
+  background-color: #555;
+}
+
+.next-arrow {
+  right: 10px;
+}
+
+.prev-arrow {
+  left: 10px;
+} */
+
+ 
+
+.banner-img:hover {
+  transform: scale(1.05);
+}
+
+/* Load more button */
+ 
+
+ 
+/* Other button styles */
+.btn-info,
+.btn-dark {
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+/* Container styles for product filters and listing */
+.container-fluid {
+  padding: 20px;
+}
+
+.filters {
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}
+
+.filters h4 {
+  margin-bottom: 15px;
+}
+
+.filters .d-flex {
+  margin-bottom: 10px;
+}
+
+/* Ensure no horizontal overflow for all elements */
+* {
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Apply overflow hidden to specific elements that might be causing issues */
+html, body {
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  margin: 0;
+  padding: 0;
+}
+
+ 
+/* Ensure child elements fit within their parents */
+.home-page .card {
+  width: 100%;
+  max-width: 18rem; /* Ensure cards do not exceed viewport width */
+  margin: 10px auto; /* Center the cards and avoid overflow */
+  background-color: rgba(128, 128, 128, 0.097);
+}
+
+/* Banner image adjustments */
+.banner-img {
+  margin-top: -10px;
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+  max-height: 550px;
+  width: 100%; /* Ensure banner images fit within viewport */
+  object-fit: cover; /* Maintain aspect ratio without overflow */
+  display: block; /* Ensure no extra space below images */
+}
+
+/* Home Page adjustments */
+.home-page {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0; /* Reset margin to avoid overflow */
+  padding: 0; /* Ensure no extra padding */
+}
+
+/* Mobile view adjustments */
+@media (max-width: 767px) {
+  .home-page .card {
+    width: 100%; /* Ensure cards fit within viewport on mobile */
+    margin: 10px 0; /* Adjust margin to avoid overflow */
+  }
+}
+
+@media (max-width: 767px) {
+  .home-page .card {
+    width: 100%; /* Ensure cards fit within viewport on mobile */
+    max-width: 350px; /* Optional: Set a max width for better look */
+    margin: 10px 0; /* Add vertical margin for spacing */
+  }
+}
