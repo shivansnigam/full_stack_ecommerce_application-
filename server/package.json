@@ -1,12 +1,16 @@
 {
-    "name": "backend",
+    "name": "server",
     "version": "1.0.0",
-    "description": "ecommerce rest api",
+    "description": "ecommerce application",
     "main": "server.js",
     "type": "module",
+    "engines": {
+        "node": "v20.9.0"
+    },
     "scripts": {
         "start": "node server.js",
-        "build": "some-build-command"
+        "dev": "nodemon server.js",
+        "vercel-build": "echo 'Skipping build step'"
     },
     "keywords": [],
     "author": "Shivanshu nigam",
