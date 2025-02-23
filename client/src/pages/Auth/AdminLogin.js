@@ -93,7 +93,7 @@ const AdminLogin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("/api/v1/auth/admin-login", {
+      const res = await axios.post("https://full-stack-ecommerce-application-eight.vercel.app/api/v1/auth/admin-login", {
         email,
         password,
       });

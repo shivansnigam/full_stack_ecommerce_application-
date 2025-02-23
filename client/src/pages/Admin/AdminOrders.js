@@ -23,7 +23,7 @@ const AdminOrders = () => {
   const getOrders = async () => {
     try {
       const { data } = await axios.get(
-        "/api/v1/auth/all-orders"
+        "https://full-stack-ecommerce-application-eight.vercel.app/api/v1/auth/all-orders"
       );
       setOrders(data);
     } catch (error) {
@@ -38,7 +38,7 @@ const AdminOrders = () => {
   const handleChange = async (orderId, value) => {
     try {
       const { data } = await axios.put(
-        `/api/v1/auth/order-status/${orderId}`,
+        `https://full-stack-ecommerce-application-eight.vercel.app/api/v1/auth/order-status/${orderId}`,
         {
           status: value,
         }
@@ -98,7 +98,7 @@ const AdminOrders = () => {
                   <div className="row mb-2 p-3 card flex-row" key={p._id}>
                     <div className="col-md-4">
                       <img
-                        src={`/api/v1/product/product-photo/${p._id}`}
+                        src={`https://full-stack-ecommerce-application-eight.vercel.app/api/v1/product/product-photo/${p._id}`}
                         className="card-img-top"
                         alt={p.name}
                         width="100px"
